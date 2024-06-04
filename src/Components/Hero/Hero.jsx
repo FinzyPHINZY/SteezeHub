@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__left">
-        <h2>New Arricals Only</h2>
+        <h2>New Arrivals Only</h2>
         <div>
           <div className="hero__hand_icon">
             <p>New</p>
