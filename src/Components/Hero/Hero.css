@@ -52,6 +52,11 @@
   font-weight: 700;
 }
 
+.hero__latest_btn:hover {
+  transform: scale(1.05);
+  transform: 250ms ease-in-out;
+}
+
 .hero__right {
   flex: 1;
   display: flex;
