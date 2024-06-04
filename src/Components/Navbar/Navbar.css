@@ -38,6 +38,7 @@
 .navbar__menu hr {
   border: none;
   width: 80%;
+  text-align: center;
   height: 3px;
   border-radius: 10px;
   background: #ff4141;
