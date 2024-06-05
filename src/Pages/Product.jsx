@@ -8,7 +8,6 @@ import RelatedProducts from "../Components/RelatedProducts/RelatedProducts";
 
 const Product = () => {
   const { all_product } = useContext(ShopContext);
-  console.log(all_product);
 
   const { productId } = useParams();
 
