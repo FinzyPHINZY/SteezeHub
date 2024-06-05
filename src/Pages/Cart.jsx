@@ -1,4 +1,4 @@
-import "./Cart.css";
+import "./CSS/Cart.css";
 
 const Cart = () => {
   return <div>Cart</div>;
