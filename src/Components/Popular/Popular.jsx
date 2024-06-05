@@ -4,16 +4,7 @@ import Item from "../Items/Item";
 
 const Popular = () => {
   const products = data.map((item) => {
-    return (
-      <Item
-        key={item.id}
-        id={item.id}
-        name={item.name}
-        image={item.image}
-        new_price={item.new_price}
-        old_price={item.old_price}
-      />
-    );
+    return <Item key={item.id} item={item} />;
   });
 
   return (

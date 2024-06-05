@@ -6,19 +6,9 @@ import Item from "../Components/Items/Item";
 
 const Shop = ({ banner, category }) => {
   const { all_product } = useContext(ShopContext);
-  console.log(all_product);
   const products = all_product
     .filter((item) => item.category === category)
-    .map((item) => (
-      <Item
-        key={item.id}
-        id={item.id}
-        name={item.name}
-        image={item.image}
-        new_price={item.new_price}
-        old_price={item.old_price}
-      />
-    ));
+    .map((item) => <Item key={item.id} item={item} />);
   return (
     <div className="shopcategory">
       <img src={banner} alt="" className="shopcategory__banner" />
