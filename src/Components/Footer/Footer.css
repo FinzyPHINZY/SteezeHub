@@ -59,3 +59,35 @@
   height: 3px;
   background: #c7c7c7;
 }
+
+@media (max-width: 800px) {
+  .footer {
+    gap: 20px;
+  }
+
+  .footer__logo {
+    gap: 10px;
+    align-items: end;
+  }
+
+  .footer__logo img {
+    width: 40px;
+  }
+
+  .footer__logo p {
+    font-size: 25px;
+  }
+
+  .footer__links {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .footer__social_icon img {
+    width: 22px;
+  }
+
+  .footer__copyright {
+    font-size: 13px;
+  }
+}
