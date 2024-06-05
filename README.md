@@ -26,7 +26,8 @@ Welcome to the SteezeHub frontend repository! This project is the frontend part 
 
 **Link to project:** http://recruiters-love-seeing-live-demos.com/
 
-![SteezeHub](http://placecorgi.com/1200/650)
+![SteezeHub](![SteezeHub](https://github.com/FinzyPHINZY/SteezeHub/assets/102292855/be6895f3-1fb6-454e-bc25-f3c49af9c201)
+)
 
 ## How It's Made:
 
