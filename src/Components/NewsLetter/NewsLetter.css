@@ -10,11 +10,12 @@
   padding: 0px 140px;
   margin-bottom: 150px;
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  text-align: center;
 }
 
 .newsletter h1 {
   color: #454545;
-  font-size: 45px;
+  /* font-size: 35px; */
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -45,9 +46,130 @@
 
 .newsletter div button {
   width: 210px;
-  height: 70px;
+  height: 100%;
   border-radius: 80px;
-  background: white;
+  background: black;
+  color: white;
   font-size: 16px;
   cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .newsletter {
+    padding: 0px 80px;
+    margin-bottom: 120px;
+    gap: 20px;
+  }
+
+  .newsletter h1 {
+    font-size: 25px;
+  }
+
+  .newsletter p {
+    font-size: 16px;
+  }
+
+  .newsletter div {
+    width: 600px;
+    height: 60px;
+  }
+
+  .newsletter input {
+    width: 400px;
+  }
+
+  .newsletter div button {
+    width: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newsletter {
+    margin-bottom: 60px;
+    padding: 0px 60px;
+  }
+
+  .newsletter h1 {
+    font-size: 25px;
+  }
+
+  .newsletter p {
+    font-size: 14px;
+  }
+
+  .newsletter div {
+    width: 500px;
+    height: 40px;
+  }
+
+  .newsletter input {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .newsletter div button {
+    width: 160px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .newsletter {
+    margin-bottom: 30px;
+    height: 20vh;
+  }
+
+  .newsletter h1 {
+    font-size: 18px;
+  }
+
+  .newsletter p {
+    font-size: 12px;
+  }
+
+  .newsletter div {
+    width: 400px;
+    height: 40px;
+  }
+
+  .newsletter input {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .newsletter div button {
+    width: 100px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsletter {
+    height: 25vh;
+    width: 100%;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .newsletter h1 {
+    font-size: 16px;
+  }
+
+  .newsletter p {
+    font-size: 13px;
+    max-width: 200px;
+  }
+
+  .newsletter div {
+    width: 290px;
+  }
+
+  .newsletter input {
+    width: 130px;
+  }
+
+  .newsletter div button {
+    width: 160px;
+    font-size: 14px;
+  }
 }

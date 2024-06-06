@@ -1,20 +1,30 @@
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
-
+import { CircleArrowDown01Icon } from "hugeicons-react";
 const Navbar = () => {
   const { getCartCount } = useContext(ShopContext);
   const [menu, setMenu] = useState("shop");
+  const menuRef = useRef();
+
+  const dropdownToggle = (e) => {
+    menuRef.current.classList.toggle("nav_menu_visible");
+    e.target.classList.toggle("open");
+  };
   return (
     <div className="navbar">
       <div className="navbar__logo">
         <img src={logo} alt="SteezeHub" />
         <p>SteezeHub</p>
       </div>
-      <ul className="navbar__menu">
+      <CircleArrowDown01Icon
+        className="navbar__dropdown"
+        onClick={dropdownToggle}
+      />
+      <ul ref={menuRef} className="navbar__menu">
         <li onClick={() => setMenu("shop")}>
           <NavLink to="/">Shop </NavLink>
           {menu === "shop" && <hr />}

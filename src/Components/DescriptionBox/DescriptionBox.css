@@ -29,3 +29,30 @@
   border: 1px solid #d0d0d0;
   padding: 48px;
 }
+
+@media (max-width: 1280px) {
+  .description__box {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .description__box {
+    margin: 60px 20px;
+  }
+
+  .description__box_description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .description__box_nav {
+    flex: 1;
+  }
+
+  .description__box_description {
+    padding: 24px;
+    font-size: 12px;
+  }
+}
