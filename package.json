@@ -2,6 +2,7 @@
   "name": "steezehub",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://finzyphinzy.github.io/SteezeHub/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

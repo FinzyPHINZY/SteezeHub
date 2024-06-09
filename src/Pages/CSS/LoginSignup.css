@@ -46,6 +46,16 @@
   font-weight: 600;
 }
 
+.loginSignup__container button:hover {
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: #ff4170;
+}
+
+.loginSignup__container button:active {
+  transform: scale(1.03);
+}
+
 .loginSignup__login {
   margin-top: 20px;
   color: #5c5c5c;
