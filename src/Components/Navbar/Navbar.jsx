@@ -10,6 +10,11 @@ const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   const menuRef = useRef();
 
+  const logout = () => {
+    localStorage.removeItem("auth-token");
+    window.location.replace("/login");
+  };
+
   const dropdownToggle = (e) => {
     menuRef.current.classList.toggle("nav_menu_visible");
     e.target.classList.toggle("open");
@@ -43,14 +48,21 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="navbar__login_cart">
-        <NavLink to="/login">
-          <button>Login</button>
-        </NavLink>
-
-        <NavLink to="/cart">
-          <img src={cart_icon} alt="Cart" />
-        </NavLink>
-        <div className="navbar__cart_count">{getCartCount()}</div>
+        {localStorage.getItem("auth-token") ? (
+          <>
+            <button onClick={logout}>Logout</button>{" "}
+            <NavLink to="/cart">
+              <img src={cart_icon} alt="Cart" />
+            </NavLink>{" "}
+            <div className="navbar__cart_count">{getCartCount()}</div>
+          </>
+        ) : (
+          <>
+            <NavLink to="/login">
+              <button>Login</button>
+            </NavLink>{" "}
+          </>
+        )}
       </div>
     </div>
   );
