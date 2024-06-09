@@ -19,7 +19,7 @@ const ShopContextProvider = ({ children }) => {
   useEffect(() => {
     fetch("http://localhost:3000/product")
       .then((res) => res.json())
-      .then((data) => setAll_Product(data));
+      .then((data) => setAll_Product(data.data));
   }, []);
 
   const addToCart = (itemId) => {
