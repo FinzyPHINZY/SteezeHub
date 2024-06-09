@@ -20,6 +20,20 @@ const ShopContextProvider = ({ children }) => {
     fetch("http://localhost:3000/product")
       .then((res) => res.json())
       .then((data) => setAll_Product(data.data));
+
+    if (localStorage.getItem("auth-token")) {
+      fetch("http://localhost:3000/product/getcart", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "auth-token": `${localStorage.getItem("auth-token")}`,
+        },
+        body: "",
+      })
+        .then((res) => res.json())
+        .then((data) => setCartItems(data));
+    }
   }, []);
 
   const addToCart = (itemId) => {
