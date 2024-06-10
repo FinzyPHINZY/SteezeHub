@@ -6,7 +6,7 @@ const NewCollections = () => {
   const [new_collection, setNew_collection] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/product/newcollections")
+    fetch("https://steezehub-backend.onrender.com/product/newcollections")
       .then((res) => res.json())
       .then((data) => setNew_collection(data.data));
   }, []);
