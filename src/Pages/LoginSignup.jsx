@@ -23,7 +23,7 @@ const LoginSignup = () => {
     if (state === "Sign Up") {
       let responseData;
 
-      await fetch("http://localhost:3000/signup", {
+      await fetch("https://steezehub-backend.onrender.com/signup", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -37,11 +37,13 @@ const LoginSignup = () => {
       if (responseData.success) {
         localStorage.setItem("auth-token", responseData.token);
         window.location.replace("/");
+      } else {
+        alert("Signup Failed: Please Try Again");
       }
     } else {
       let responseData;
 
-      await fetch("http://localhost:3000/login", {
+      await fetch("https://steezehub-backend.onrender.com/login", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -55,6 +57,8 @@ const LoginSignup = () => {
       if (responseData.success) {
         localStorage.setItem("auth-token", responseData.token);
         window.location.replace("/");
+      } else {
+        alert(`Login Failed: ${responseData.message}`);
       }
     }
   };

@@ -6,7 +6,7 @@ const RelatedProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/product/")
+    fetch("https://steezehub-backend.onrender.com/product/")
       .then((res) => res.json())
       .then((output) => {
         setAllProducts(output.data);

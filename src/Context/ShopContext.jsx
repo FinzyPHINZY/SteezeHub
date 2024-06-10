@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-// import all_product from "../Components/Assets/all_product";
 
 export const ShopContext = createContext(null);
 
@@ -17,12 +16,12 @@ const ShopContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch("http://localhost:3000/product")
+    fetch("https://steezehub-backend.onrender.com/product")
       .then((res) => res.json())
       .then((data) => setAll_Product(data.data));
 
     if (localStorage.getItem("auth-token")) {
-      fetch("http://localhost:3000/product/getcart", {
+      fetch("https://steezehub-backend.onrender.com/product/getcart", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -39,7 +38,7 @@ const ShopContextProvider = ({ children }) => {
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch("http://localhost:3000/product/addtocart", {
+      fetch("https://steezehub-backend.onrender.com/product/addtocart", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -58,7 +57,7 @@ const ShopContextProvider = ({ children }) => {
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch("http://localhost:3000/product/removefromcart", {
+      fetch("https://steezehub-backend.onrender.com/product/removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/json",
