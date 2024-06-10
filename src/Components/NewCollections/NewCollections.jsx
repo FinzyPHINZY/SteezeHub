@@ -8,7 +8,10 @@ const NewCollections = () => {
   useEffect(() => {
     fetch("https://steezehub-backend.onrender.com/product/newcollections")
       .then((res) => res.json())
-      .then((data) => setNew_collection(data.data));
+      .then((data) => {
+        setNew_collection(data.data);
+        console.log(data);
+      });
   }, []);
 
   const products = new_collection.map((item) => {
