@@ -36,7 +36,7 @@ const LoginSignup = () => {
 
       if (responseData.success) {
         localStorage.setItem("auth-token", responseData.token);
-        window.location.replace("/");
+        window.location.replace("/SteezeHub");
       } else {
         alert("Signup Failed: Please Try Again");
       }
@@ -56,7 +56,7 @@ const LoginSignup = () => {
 
       if (responseData.success) {
         localStorage.setItem("auth-token", responseData.token);
-        window.location.replace("/");
+        window.location.replace("/SteezeHub");
       } else {
         alert(`Login Failed: ${responseData.message}`);
       }
