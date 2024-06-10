@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const logout = () => {
     localStorage.removeItem("auth-token");
-    window.location.replace("/login");
+    window.location.replace("/SteezeHub/login");
   };
 
   const dropdownToggle = (e) => {
