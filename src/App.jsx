@@ -14,7 +14,7 @@ import kids_banner from "./Components/Assets/banner_kids.png";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/SteezeHub">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
