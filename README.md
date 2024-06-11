@@ -1,67 +1,89 @@
 # SteezeHub - Where Style Meets Steeze
 
+## Description
+
+Steezehub is an online store with functionalities similar to popular e-commerce websites. The frontend is built using ReactJS, React Router, and React Context API. It is fully responsive and optimized for all devices. The project focuses on providing a seamless user experience with efficient performance.
+
+## Demo
+
+Check out the live demo of Steezehub [here](https://finzyphinzy.github.io/SteezeHub/).
+
+## Backend Repository
+
+You can find the backend code for Steezehub [here](https://github.com/finzyphinzy/SteezeHub_Backend).
+
+## Technologies Used
+
+- **ReactJS**: A JavaScript library for building user interfaces.
+- **React Router**: A library for routing in React applications.
+- **React Context API**: A method for state management in React applications.
+- **HugeIcons**: A library for high-quality icons.
+- **CSS3**: For styling and making the application responsive.
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- npm (Node Package Manager)
+
+### Steps
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/FinzyPHINZY/SteezeHub.git
+   cd steezehub-frontend
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the application:**
+
+   ```bash
+   npm start
+   ```
+
+   The application will start running on `http://localhost:5173`.
+
+## Usage
+
+### Running the Application
+
+To start the application, use:
+
+```bash
+npm run dev
 ```
-FRONTEND
-```
 
-Welcome to the SteezeHub frontend repository! This project is the frontend part of the SteezeHub ecommerce website built using the MERN stack. The frontend is developed with React and styled using Tailwind CSS for a minimalistic and responsive design.
+### Features
 
-## Table of Contents
+- **Home Page**: Displays featured products and categories.
+- **Product Listing**: Lists all available products in different categories.
+- **Product Details**: Detailed view of each product with an option to add to cart.
+- **Cart**: View and manage items in the cart.
+- **User Authentication**: Sign up, login, and logout functionalities.
+- **Admin Panel**: For product management (upload, update, delete).
 
-- [Features](#features)
-- [Dependencies](#dependencies)
-- [Scripts](#scripts)
-- [Contributing](#contributing)
-- [License](#license)
+## Optimization Techniques
 
-## Features
+To ensure optimal performance and a smooth user experience, the following optimization techniques have been implemented:
 
-- **Home Page:** Displaying featured products and categories.
-- **Product Page:** Detailed view of a selected product with images, descriptions, and reviews.
-- **Cart:** Manage items in the shopping cart.
-- **User Authentication:** Login and registration functionality.
-- **Responsive Design:** Mobile-friendly layout using Tailwind CSS.
-- **Search Functionality:** Quickly find products using the search bar.
-- **Navigation:** Easy navigation between different sections of the website.
+- **Efficient State Management**: Leveraging React Context API to manage global state efficiently.
+- **Responsive Design**: Ensuring the application is fully responsive using CSS media queries and responsive units.
+- **Minification**: Minifying CSS and JavaScript files to reduce load times.
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
+## Contributing
 
-![SteezeHub](![SteezeHub](https://github.com/FinzyPHINZY/SteezeHub/assets/102292855/be6895f3-1fb6-454e-bc25-f3c49af9c201)
-)
+Contributions are welcome! Please follow these steps:
 
-## How It's Made:
-
-**Tech used:** HTML, CSS, JavaScript, Framework of choice
-
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write _something_. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
-
-## Optimizations
-
-_(optional)_
-
-You don't have to include this section but interviewers _love_ that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews!
-
-## Lessons Learned:
-
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those _whoa this is awesome_ or _wow I actually did it!_ moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
-
-## Examples:
-
-Take a look at these couple examples that I have in my own portfolio:
-
-**Palettable:** https://github.com/alecortega/palettable
-
-**Twitter Battle:** https://github.com/alecortega/twitter-battle
-
-**Patch Panel:** https://github.com/alecortega/patch-panel
-
-## Dependencies
-
-Key dependencies used in this project include:
-
-- [React](https://reactjs.org/)
-- [React Router](https://reactrouter.com/)
-- [Axios](https://axios-http.com/) for HTTP requests
-- [React Icons](https://react-icons.github.io/react-icons/) for iconography
-
-For a complete list of dependencies, refer to the `package.json` file.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
