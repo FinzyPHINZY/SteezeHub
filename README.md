@@ -2,7 +2,7 @@
 
 ## Description
 
-Steezehub is an online store with functionalities similar to popular e-commerce websites. The frontend is built using ReactJS, React Router, and React Context API. It is fully responsive and optimized for all devices. The project focuses on providing a seamless user experience with efficient performance.
+Welcome to the SteezeHub frontend repository! This project is the frontend part of the SteezeHub ecommerce website built using the MERN stack.The frontend is built using ReactJS, React Router, and React Context API. It is fully responsive and optimized for all devices. The project focuses on providing a seamless user experience with efficient performance.
 
 ## Demo
 
